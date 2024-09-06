@@ -1,27 +1,40 @@
-#container {
+
+center-text {
   text-align: center;
+}
 
+.card-container {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0; /* Remover o padding padrão do card */
+}
+
+.image-container {
+  position: relative;
+  width: 100%; /* Ajusta a largura do container da imagem */
+}
+
+.image-container img {
+  width: 100%; /* Ajusta a largura da imagem ao container */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Opcional: adicionar bordas arredondadas */
+}
+
+.name-overlay {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 10px; /* Distância do topo da imagem */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.5rem; /* Ajuste o tamanho do texto conforme necessário */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Opcional: sombra para melhor contraste */
+  background: rgba(0, 0, 0, 0.5); /* Opcional: fundo semitransparente para melhorar a visibilidade */
+  padding: 5px; /* Opcional: adicionar algum padding para o texto */
+  border-radius: 5px; /* Opcional: bordas arredondadas para o fundo do texto */
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+.code-number {
+  font-weight: bold;
 }
